@@ -1,3 +1,3 @@
 ### Деталізація матеріальних потреб
 
-![MindMap](MindMap.jpg)
+![MindMap](MaterialNeedsDeteils/MindMap.jpg)
