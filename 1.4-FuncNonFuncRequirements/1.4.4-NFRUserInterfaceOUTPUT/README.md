@@ -1,3 +1,3 @@
 ### Опис вимог до OUTPUT-потоків інтерфейсу користувача
 
-![Diagram](WireframeDiagram.jpg)
+![Diagram](WireframeDesign.jpg)
