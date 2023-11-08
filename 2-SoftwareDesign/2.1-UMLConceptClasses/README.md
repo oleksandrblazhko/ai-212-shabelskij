@@ -1,3 +1,3 @@
 ### UML-діаграма концептуальних класів
 
-![UML-Concept](UML-ConceptClasses.jpg)
+![UML-Concept](UML-ConceptClassesNew.jpg)
