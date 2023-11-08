@@ -28,3 +28,8 @@ CREATE TABLE Chat(
 firstUser INTEGER FOREIGN KEY (User) REFERENCES User (id),
 secondUser INTEGER FOREIGN KEY (User) REFERENCES User (id)
 );
+
+ALTER TABLE User ADD CONSTRAINT unique_email UNIQUE (email);
+ALTER TABLE User ADD CONSTRAINT check_status CHECK (status IN ('Active', 'Inactive', 'Blocked'));
+ALTER TABLE Friend ADD CONSTRAINT unique_user_email UNIQUE (userId, email);
+ALTER TABLE Friend ADD CONSTRAINT check_status CHECK (status IN ('Friend', 'Pending', 'Blocked'));
