@@ -1,0 +1,22 @@
+@startuml
+
+title Usecase for Information system
+
+left to right direction
+
+actor User
+actor :Complex Program:
+
+rectangle Software {
+
+    usecase (Usecase1)
+    usecase (Usecase2)
+    usecase (Usecase3)
+
+   :Complex Program: -- (Usecase1)
+   (Usecase1) .> (Usecase2) : include
+   (Usecase2) .> (Usecase3) : extends
+   User -- (Usecase2)
+}
+
+@enduml

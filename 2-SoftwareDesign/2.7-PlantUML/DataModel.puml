@@ -1,0 +1,22 @@
+@startuml
+
+title Example of Relation Schema
+
+hide circle
+
+entity "User" as t01 {
+    (PK) userno
+    --
+    name
+}
+
+entity "Chat" as t02 {
+    (PK) chatno
+    --
+    (FK) fisrtUser
+    (FK) secondUser
+}
+
+t01 --{ t02
+
+@enduml
