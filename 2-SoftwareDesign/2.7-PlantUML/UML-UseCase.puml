@@ -11,7 +11,7 @@ rectangle Software {
     usecase (Пошук співбесідника)
     usecase (Зайти у налаштування)
     usecase (Видалити друга)
-    usecase (Додати дргуа)
+    usecase (Додати друга)
     usecase (Закінчити розмову)
     usecase (Заповнити обліковий запис)
     usecase (Написати повідомлення другу)
