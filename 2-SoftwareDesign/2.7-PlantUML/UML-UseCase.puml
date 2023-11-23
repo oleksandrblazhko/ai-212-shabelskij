@@ -5,18 +5,26 @@ title Usecase for Information system
 left to right direction
 
 actor User
-actor :Complex Program:
 
 rectangle Software {
 
-    usecase (Usecase1)
-    usecase (Usecase2)
-    usecase (Usecase3)
+    usecase (Пошук співбесідника)
+    usecase (Зайти у налаштування)
+    usecase (Видалити друга)
+    usecase (Додати дргуа)
+    usecase (Закінчити розмову)
+    usecase (Заповнити обліковий запис)
+    usecase (Написати повідомлення другу)
+    usecase (Змінити шрифт)
 
-   :Complex Program: -- (Usecase1)
-   (Usecase1) .> (Usecase2) : include
-   (Usecase2) .> (Usecase3) : extends
-   User -- (Usecase2)
+   (Пошук співбесідника) .> (Заповнити обліковий запис) : include
+   (Пошук співбесідника) .> (Додати друга) : extends
+   (Пошук співбесідника) .> (Видалити друга) : extends
+   (Пошук співбесідника) .> (Закінчити розмову) : include
+   (Додати друга) .> (Написати повідомлення другу) : extends
+   (Зайти у налаштування) .> (Змінити шрифт) : extends
+   User -- (Зайти у налаштування)
+   User -- (Пошук співбесідника)
 }
 
 @enduml
