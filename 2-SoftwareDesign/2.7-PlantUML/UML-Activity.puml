@@ -1,0 +1,30 @@
+@startuml
+
+title Example of Activity Diagram 
+
+start
+
+:The program adds user to DB;
+
+:The program adds other user to "friend list";
+
+:The program deletes user from "friend list";
+
+:The program changes user`s status;
+
+:The program changes background in chat;
+
+:The program changes font;
+
+:The program connect user to chat;
+
+if(program activity succesfull) then (yes)
+  :Go to the next step;
+else (no)
+  :Print "ERROR"
+endif
+
+stop
+
+@enduml
+
