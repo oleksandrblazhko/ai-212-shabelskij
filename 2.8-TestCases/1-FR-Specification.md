@@ -1,4 +1,4 @@
-changeStatus()
+changeStatus()  
 1)вхідні параметри:  
 1.1) status - мережевий статус (рядок символів):  
 	- умова 1) - status не має бути NULL;    
