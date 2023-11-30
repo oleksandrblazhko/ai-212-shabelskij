@@ -1,0 +1,38 @@
+@startuml
+
+hide circle
+title Example of Classes Diagram 
+
+Class User{
+	name
+	dateOfBirth
+	email
+	login
+	password
+	status
+}
+
+Class Settings{
+	background
+	font
+}
+
+Class Friend{
+	name
+	dateOfDirth
+	email
+	status
+}
+
+Class Chat{
+	firstUser
+	secondUser
+}
+
+User <|-- Friend
+
+User <|-- Chat
+
+User <|-- Settings
+
+@enduml
