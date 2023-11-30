@@ -18,6 +18,12 @@ start
 
 :The program connect user to chat;
 
+if(program activity succesfull) then (yes)
+  :Go to the next step;
+else (no)
+  :Print "ERROR"
+endif
+
 stop
 
 @enduml
